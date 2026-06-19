@@ -1,0 +1,9 @@
+# Visual Studio user-specific files
+.vs/
+*.dtproj.user
+
+# Build output
+bin/
+
+# SSIS build intermediates (keep BuildLog.xml for protection-level consistency tracking)
+obj/Development/*.ispac
