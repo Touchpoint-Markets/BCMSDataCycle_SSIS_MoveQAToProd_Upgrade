@@ -7,3 +7,6 @@ bin/
 
 # SSIS build intermediates (keep BuildLog.xml for protection-level consistency tracking)
 obj/Development/*.ispac
+obj/Development/*.dtproj
+obj/Development/*.dtsx
+obj/Development/Project.params
