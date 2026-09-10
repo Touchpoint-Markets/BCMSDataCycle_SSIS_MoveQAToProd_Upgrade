@@ -2,13 +2,13 @@
 <BuildLog xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ProjectInfo>
     <Name>BCMSDataCycle</Name>
-    <LastWriteTime>2026-06-19T12:28:00.5236007Z</LastWriteTime>
+    <LastWriteTime>2026-09-10T12:55:31.8824244Z</LastWriteTime>
     <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>BCMSGoldQAToProd.dtsx</Name>
-      <LastWriteTime>2026-06-19T12:52:42.9876634Z</LastWriteTime>
+      <LastWriteTime>2026-09-10T12:55:30.3888988Z</LastWriteTime>
       <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

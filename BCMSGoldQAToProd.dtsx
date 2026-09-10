@@ -13,8 +13,8 @@
   DTS:MaxErrorCount="0"
   DTS:ObjectName="BCMSGoldQAToProd"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="70"
-  DTS:VersionGUID="{4BFCCDE8-CAA2-47C2-8D24-5EABAE95CD8A}">
+  DTS:VersionBuild="74"
+  DTS:VersionGUID="{79AC4E04-62E1-47CE-8105-E27EEF1A4120}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -10562,7 +10562,7 @@ namespace ST_44deed54453b44d1ac4e1d0a698b3561.Properties {
     <msb:CodeName>ST_44deed54453b44d1ac4e1d0a698b3561</msb:CodeName>
     <msb:Language>msBuild</msb:Language>
     <msb:DisplayName>ST_44deed54453b44d1ac4e1d0a698b3561</msb:DisplayName>
-    <msb:ProjectId>{C1878F82-B0F0-42BA-A928-0BCFD7731794}</msb:ProjectId>
+    <msb:ProjectId>{E0F42E92-B2C2-41B9-96E7-0B318EE27580}</msb:ProjectId>
   </msb:PropertyGroup>
   <msb:ItemGroup>
     <msb:Project Include="ST_44deed54453b44d1ac4e1d0a698b3561.csproj" />
@@ -10702,7 +10702,7 @@ using System.Runtime.CompilerServices;
           <BinaryItem
             Name="ST_44deed54453b44d1ac4e1d0a698b3561.dll">TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
-ZGUuDQ0KJAAAAAAAAABQRQAATAEDAI47NWoAAAAAAAAAAOAAIiALATAAABYAAAAIAAAAAAAAWjQA
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAKWoomoAAAAAAAAAAOAAIiALATAAABYAAAAIAAAAAAAAWjQA
 AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACAAAAAAgAAAAAAAAMAYIUAABAA
 ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAAg0AABPAAAAAEAAAHgEAAAAAAAAAAAAAAAAAAAA
 AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -10740,7 +10740,7 @@ RgZyAHkAVAYQAHkALwR5AHkAtQYQACEBIwUQACEBkQYBACkBIwV+ACEBDAaEACEBUwR5ACEBfACL
 AHEAIwUGAJkAIwUGADkBuACRADkBvgaaAKEAIwWgAMEAIwUGAAgAFAC6AAgAGAC/ACkAcwAnAS4A
 CwD/AC4AEwAIAS4AGwAnAS4AIwAwAS4AKwBZAS4AMwBZAS4AOwBZAS4AQwAwAS4ASwBfAS4AUwBZ
 AS4AWwB2AUMAYwC/AEkAcwAnAWEAewC/AGMAawC/ABsAJQADAAEABAADAAAA/wTwAAAAMAH1AAAA
-bwb6AAIABQADAAIABgAFAAEABwAFAAIACAAHAGMABIAAAAEAAADCJTOBAAAAAAAAAQAAAAQAAAAA
+bwb6AAIABQADAAIABgAFAAEABwAFAAIACAAHAGMABIAAAAEAAAAVJtJaAAAAAAAAAQAAAAQAAAAA
 AAAAAAAAAKgAbwAAAAAAEQAAAAAAAAAAAAAAsQBNAwAAAAAEAAAAAAAAAAAAAACoAGoEAAAAABEA
 AAAAAAAAAAAAALEASAAAAAAAAAAAAAEAAAB0BQAABQACAAAAAAAAU1RfNDRkZWVkNTQ0NTNiNDRk
 MWFjNGUxZDBhNjk4YjM1NjEAQ29sbGVjdGlvbmAxAEludDMyADxNb2R1bGU+AGdldF9DQwBNaWNy
@@ -10787,7 +10787,7 @@ dwBvAHIAZAAAH1UAcwBlAHIAOgA6AEUAbQBhAGkAbABGAHIAbwBtAAAbVQBzAGUAcgA6ADoARQBt
 AGEAaQBsAFQAbwAAG1UAcwBlAHIAOgA6AEUAbQBhAGkAbABDAEMAACd5AHkAeQB5AC0ATQBNAC0A
 ZABkACAASABIADoAbQBtADoAcwBzAAEHIABAACAAAHFTAFQAXwA0ADQAZABlAGUAZAA1ADQANAA1
 ADMAYgA0ADQAZAAxAGEAYwA0AGUAMQBkADAAYQA2ADkAOABiADMANQA2ADEALgBQAHIAbwBwAGUA
-cgB0AGkAZQBzAC4AUgBlAHMAbwB1AHIAYwBlAHMAAAAAxzDDF8YKGUKyCKCaQVkWMgAEIAEBCAMg
+cgB0AGkAZQBzAC4AUgBlAHMAbwB1AHIAYwBlAHMAAAAAmBAPDqTIZUWgczuoVMw5iwAEIAEBCAMg
 AAEFIAEBEREEIAEBDgUgAQERWQQHAg4OBCAAEmkNBwkIDg4ODg4OEj0RQQQgABJtBSABEnEcAyAA
 HAMgAA4FAAEBEX0EAAARQQQgAQ4OBiABARKAgQUgABKAhQgVEoCJARKAgQUgAQETAAYAAw4ODg4E
 IAEBAgUgAgEODgYgAQESgJkFIAEBEj0IAAESgJ0RgKEFIAASgKUHIAIBDhKApQi3elxWGTTgiQiJ
@@ -10810,14 +10810,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAABABAAAAAYAACAAAAAAAAAAAAAAAAAAAABAAEAAAAwAACAAAAAAAAAAAAAAAAAAAABAAAAAABI
 AAAAWEAAABoEAAAAAAAAAAAAABoENAAAAFYAUwBfAFYARQBSAFMASQBPAE4AXwBJAE4ARgBPAAAA
-AAC9BO/+AAABAAAAAQAzgcIlAAABADOBwiU/AAAAAAAAAAQAAAACAAAAAAAAAAAAAAAAAAAARAAA
+AAC9BO/+AAABAAAAAQDSWhUmAAABANJaFSY/AAAAAAAAAAQAAAACAAAAAAAAAAAAAAAAAAAARAAA
 AAEAVgBhAHIARgBpAGwAZQBJAG4AZgBvAAAAAAAkAAQAAABUAHIAYQBuAHMAbABhAHQAaQBvAG4A
 AAAAAAAAsAR6AwAAAQBTAHQAcgBpAG4AZwBGAGkAbABlAEkAbgBmAG8AAABWAwAAAQAwADAAMAAw
 ADAANABiADAAAAAaAAEAAQBDAG8AbQBtAGUAbgB0AHMAAAAAAAAAIgABAAEAQwBvAG0AcABhAG4A
 eQBOAGEAbQBlAAAAAAAAAAAAcAAkAAEARgBpAGwAZQBEAGUAcwBjAHIAaQBwAHQAaQBvAG4AAAAA
 AFMAVABfADQANABkAGUAZQBkADUANAA0ADUAMwBiADQANABkADEAYQBjADQAZQAxAGQAMABhADYA
 OQA4AGIAMwA1ADYAMQAAAD4ADwABAEYAaQBsAGUAVgBlAHIAcwBpAG8AbgAAAAAAMQAuADAALgA5
-ADYANgA2AC4AMwAzADAANwA1AAAAAABwACgAAQBJAG4AdABlAHIAbgBhAGwATgBhAG0AZQAAAFMA
+ADcANAA5AC4AMgAzADIANQAwAAAAAABwACgAAQBJAG4AdABlAHIAbgBhAGwATgBhAG0AZQAAAFMA
 VABfADQANABkAGUAZQBkADUANAA0ADUAMwBiADQANABkADEAYQBjADQAZQAxAGQAMABhADYAOQA4
 AGIAMwA1ADYAMQAuAGQAbABsAAAASAASAAEATABlAGcAYQBsAEMAbwBwAHkAcgBpAGcAaAB0AAAA
 QwBvAHAAeQByAGkAZwBoAHQAIABAACAAIAAyADAAMgA2AAAAKgABAAEATABlAGcAYQBsAFQAcgBh
@@ -10826,8 +10826,8 @@ bQBlAAAAUwBUAF8ANAA0AGQAZQBlAGQANQA0ADQANQAzAGIANAA0AGQAMQBhAGMANABlADEAZAAw
 AGEANgA5ADgAYgAzADUANgAxAC4AZABsAGwAAABoACQAAQBQAHIAbwBkAHUAYwB0AE4AYQBtAGUA
 AAAAAFMAVABfADQANABkAGUAZQBkADUANAA0ADUAMwBiADQANABkADEAYQBjADQAZQAxAGQAMABh
 ADYAOQA4AGIAMwA1ADYAMQAAAEIADwABAFAAcgBvAGQAdQBjAHQAVgBlAHIAcwBpAG8AbgAAADEA
-LgAwAC4AOQA2ADYANgAuADMAMwAwADcANQAAAAAARgAPAAEAQQBzAHMAZQBtAGIAbAB5ACAAVgBl
-AHIAcwBpAG8AbgAAADEALgAwAC4AOQA2ADYANgAuADMAMwAwADcANQAAAAAAAAAAAAAAAAAAAAAA
+LgAwAC4AOQA3ADQAOQAuADIAMwAyADUAMAAAAAAARgAPAAEAQQBzAHMAZQBtAGIAbAB5ACAAVgBl
+AHIAcwBpAG8AbgAAADEALgAwAC4AOQA3ADQAOQAuADIAMwAyADUAMAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -10995,51 +10995,77 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="159.2,41.6"
+          Size="164,42"
           Id="Package\Data Flow Task 1"
-          TopLeft="21.9,107.1" />
+          TopLeft="23,107.5" />
         <NodeLayout
-          Size="159.2,41.6"
+          Size="164,42"
           Id="Package\Data Flow Task 2"
-          TopLeft="21.9,310.3" />
+          TopLeft="23,311.5" />
         <NodeLayout
-          Size="159.2,41.6"
+          Size="164,42"
           Id="Package\Data Flow Task 3"
-          TopLeft="21.9000000000001,513.5" />
+          TopLeft="23.0000000000001,515.5" />
         <NodeLayout
-          Size="159.2,41.6"
+          Size="164,42"
           Id="Package\Data Flow Task 4"
-          TopLeft="21.9000000000001,716.699999999999" />
+          TopLeft="23.0000000000001,719.5" />
         <NodeLayout
-          Size="189.6,41.6"
+          Size="199,42"
+          Id="Package\Final Confirmation Email"
+          TopLeft="5.5000000000001,821.5" />
+        <NodeLayout
+          Size="197,42"
           Id="Package\Preparation SQL Task 1"
-          TopLeft="6.7,5.49999999999995" />
+          TopLeft="6.5,5.5" />
         <NodeLayout
-          Size="189.6,41.6"
+          Size="197,42"
           Id="Package\Preparation SQL Task 2"
-          TopLeft="6.70000000000003,208.7" />
+          TopLeft="6.50000000000003,209.5" />
         <NodeLayout
-          Size="189.6,41.6"
+          Size="197,42"
           Id="Package\Preparation SQL Task 3"
-          TopLeft="6.70000000000006,411.9" />
+          TopLeft="6.50000000000006,413.5" />
         <NodeLayout
-          Size="189.6,41.6"
+          Size="197,42"
           Id="Package\Preparation SQL Task 4"
-          TopLeft="6.70000000000009,615.099999999999" />
+          TopLeft="6.50000000000009,617.5" />
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[{19F78DCD-4A39-4D3F-8BB0-8A515D3B4383\}]"
-          TopLeft="101.5,656.699999999999">
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="105,761.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,59.9999999999999"
+              EndConnector="0,60"
               Start="0,0"
-              End="0,52.4999999999999">
+              End="0,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.4999999999999" />
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[{19F78DCD-4A39-4D3F-8BB0-8A515D3B4383\}]"
+          TopLeft="105,659.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -11050,18 +11076,18 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[{91F77D0F-823C-4724-A98E-047B5647D6CE\}]"
-          TopLeft="101.5,555.1">
+          TopLeft="105,557.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,59.9999999999999"
+              EndConnector="0,60"
               Start="0,0"
-              End="0,52.4999999999999">
+              End="0,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.4999999999999" />
+                    End="0,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -11072,18 +11098,18 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[{AD2FD55B-2F3D-42E5-A280-0134DB435F0A\}]"
-          TopLeft="101.5,453.5">
+          TopLeft="105,455.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,59.9999999999999"
+              EndConnector="0,60"
               Start="0,0"
-              End="0,52.4999999999999">
+              End="0,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.4999999999999" />
+                    End="0,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -11094,18 +11120,18 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[{C04718C5-91F0-4AD7-8551-80E38BD74BF8\}]"
-          TopLeft="101.5,47.1">
+          TopLeft="105,47.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,59.9999999999999"
+              EndConnector="0,60"
               Start="0,0"
-              End="0,52.4999999999999">
+              End="0,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.4999999999999" />
+                    End="0,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -11116,18 +11142,18 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[{D0C3D2DA-9EC4-4BDB-9923-2EEE07D0EB14\}]"
-          TopLeft="101.5,250.3">
+          TopLeft="105,251.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,59.9999999999999"
+              EndConnector="0,60"
               Start="0,0"
-              End="0,52.4999999999999">
+              End="0,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.4999999999999" />
+                    End="0,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -11138,18 +11164,18 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[{D1DC1C4B-EE1C-4477-B804-6C29DBEF80B1\}]"
-          TopLeft="101.5,351.9">
+          TopLeft="105,353.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,59.9999999999999"
+              EndConnector="0,60"
               Start="0,0"
-              End="0,52.4999999999999">
+              End="0,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.4999999999999" />
+                    End="0,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -11160,44 +11186,18 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[{E728A1B0-B03D-4C3F-A5F1-2B88D43ED12C\}]"
-          TopLeft="101.5,148.7">
+          TopLeft="105,149.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,59.9999999999999"
+              EndConnector="0,60"
               Start="0,0"
-              End="0,52.4999999999999">
+              End="0,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.4999999999999" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="192,41.6"
-          Id="Package\Final Confirmation Email"
-          TopLeft="5.5000000000001,818.299999999999" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="101.5,758.299999999999">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,59.9999999999999"
-              Start="0,0"
-              End="0,52.4999999999999">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.4999999999999" />
+                    End="0,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
