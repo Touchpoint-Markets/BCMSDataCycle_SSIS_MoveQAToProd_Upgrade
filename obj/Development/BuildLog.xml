@@ -2,14 +2,18 @@
 <BuildLog xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ProjectInfo>
     <Name>BCMSDataCycle</Name>
-    <LastWriteTime>2026-09-10T12:55:31.8824244Z</LastWriteTime>
-    <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
+    <LastWriteTime>2026-09-10T17:26:26.8427146Z</LastWriteTime>
+    <LastKnownProtectionLevel>EncryptSensitiveWithPassword</LastKnownProtectionLevel>
+    <Salt>+/jfn9fZ</Salt>
+    <LastKnownProtectedHashedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAYDO1NpQJ40OaOhCTZzB6BAAAAAACAAAAAAAQZgAAAAEAACAAAABRfRJyf+7qGjlF/997WE5dj21HrrOTYFFrV1Au4vp+MQAAAAAOgAAAAAIAACAAAABZVX2QBY+8YBv9ohGA/9VwMngCu2/TxLXJY9eA4aaTPTAAAACvTCMLB27Di9JzUq8w++plfUtNDLv5axLC1V9xwUscWVLOYxKrnCQs3t9+r4leINVAAAAAbXufifMXyO6SFJoMjY67WNDdT4ivfDZrqkx68w5JW3xEHPSR4VZHSdH3r5t6fbo8KxatbXZyYoehKhbtHmSb8g==</LastKnownProtectedHashedPassword>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>BCMSGoldQAToProd.dtsx</Name>
-      <LastWriteTime>2026-09-10T12:55:30.3888988Z</LastWriteTime>
-      <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
+      <LastWriteTime>2026-09-10T17:26:24.6650074Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithPassword</LastKnownProtectionLevel>
+      <Salt>35CTifsn</Salt>
+      <LastKnownProtectedHashedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAYDO1NpQJ40OaOhCTZzB6BAAAAAACAAAAAAAQZgAAAAEAACAAAADZy7c3YYqUwl1stgX4CnV2+raHYEkpxKByDaUTbDCjjQAAAAAOgAAAAAIAACAAAACWXgU2X5J1EWKyXardBq/k4DvDrPSlojZH4/gXpJ8dfTAAAAClonnH7gcN2yWG4gxNVH0xW/e6CMLQX9XE7Okk9myaFRu4x89QHgJt9C3pBd/ltfNAAAAAjpmbCp1gVLuKlSPp3hfJHVjRJdzRYSW2k0FTSB6zuVh13Cfr9mvGYHmdDrHaseifgcKcF1wyUYiyalhNi5pOHg==</LastKnownProtectedHashedPassword>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
 </BuildLog>

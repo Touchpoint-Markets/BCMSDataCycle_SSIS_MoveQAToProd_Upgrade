@@ -12,11 +12,11 @@
   <DataSourceViews />
   <DeploymentModelSpecificContent>
     <Manifest>
-      <SSIS:Project SSIS:ProtectionLevel="DontSaveSensitive" xmlns:SSIS="www.microsoft.com/SqlServer/SSIS">
+      <SSIS:Project SSIS:ProtectionLevel="EncryptSensitiveWithPassword" xmlns:SSIS="www.microsoft.com/SqlServer/SSIS">
         <SSIS:Properties>
           <SSIS:Property SSIS:Name="ID">{01be9004-b8de-495f-9d8c-2c03e6d4d2fb}</SSIS:Property>
           <SSIS:Property SSIS:Name="Name">BCMSDataCycle</SSIS:Property>
-          <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+          <SSIS:Property SSIS:Name="VersionMajor">0</SSIS:Property>
           <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
           <SSIS:Property SSIS:Name="VersionBuild">0</SSIS:Property>
           <SSIS:Property SSIS:Name="VersionComments">
@@ -26,6 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">SUNVWIN360DB02</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1" SSIS:Salt="S/hPGzQ1EZQ=" SSIS:IV="tY1WNmz+SvWlthRFA8VKXg==" SSIS:Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc">wrhwuBEIarDwaZJ3TXYtPU5bE8Zsjwbcbp5yQcx+1e4a7w0B7ZiOD2p+Cm5+O3ds1ERWu54rvfICH20PUJg3Yqrbpfuvq/e8WjdJvm7ECjCHRSC/h/qfZlk4ACGzg+ZeoI+1iPUGQOwltQwxQTp7ihj4bTjXxLf7ig4tr1Jbk3CXcmidutgxW1ktKWZtAo7r</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -41,13 +42,13 @@
                 <SSIS:Property SSIS:Name="Name">BCMSGoldQAToProd</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">74</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">79</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{79AC4E04-62E1-47CE-8105-E27EEF1A4120}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{56816931-8208-424D-A65C-E306A28B7A55}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">SSIS Package Description</SSIS:Property>
-                <SSIS:Property SSIS:Name="ProtectionLevel">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="ProtectionLevel">2</SSIS:Property>
               </SSIS:Properties>
               <SSIS:Parameters>
                 <SSIS:Parameter SSIS:Name="CM.DestinationConnectionOLEDB.ConnectByProxy">
