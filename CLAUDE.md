@@ -19,9 +19,10 @@ This is an **SSIS (SQL Server Integration Services)** project that copies BCMS G
 |---|---|
 | `BCMSDataCycle_SSIS_MoveQAToProd.dtproj` | Project manifest — defines the package list, connection parameter metadata, protection level, and deployment configuration |
 | `BCMSGoldQAToProd.dtsx` | The single SSIS package containing all tasks (see architecture below) |
-| `Project.params` | Project-level parameters (currently empty; package-level parameters are declared inside the `.dtproj` manifest) |
+| `Project.params` | Project-level parameters: `SmtpServer`, `SmtpPort`, `AwsSecretName`, `AwsRegion` (see "Project Parameters" and "AWS Secrets Manager Credential Retrieval" below); package-level connection parameters are declared inside the `.dtproj` manifest |
 | `BCMSDataCycle_SSIS_MoveQAToProd.slnx` | Solution file (new `.slnx` format); one configuration: `Development` |
 | `obj/Development/BuildLog.xml` | Tracks last-known protection levels for the project and each package — SSDT uses this to detect consistency drift |
+| `Imports/AWSSDK.Core.dll`, `Imports/AWSSDK.SecretsManager.dll` | AWS SDK DLLs (3.7.500, net45) used by the Final Confirmation Email Script Task to call AWS Secrets Manager at runtime — see "AWS Secrets Manager Credential Retrieval" below |
 
 ## Build & Deploy
 
@@ -69,21 +70,64 @@ All data flows are direct table-to-table copies with no transformations.
 
 ### Final Confirmation Email (Script Task)
 
-Runs after DFT 4 succeeds. Sends a completion notification via Amazon SES (SMTP) using the package variables below.
+Runs after DFT 4 succeeds. Reads `$Project::SmtpServer`, `$Project::SmtpPort`, `$Project::AwsSecretName`, `$Project::AwsRegion`, `User::ImportsPath`, `User::EmailFrom`, `User::EmailTo`, `User::EmailCC`. SMTP credentials (`UserName`/`Password`) are retrieved from AWS Secrets Manager at runtime — see "AWS Secrets Manager Credential Retrieval" below — not stored in the project. Sends a completion notification via Amazon SES (SMTP). `<BinaryItem>` was removed when this task was converted — **needs an SSDT rebuild before deploying**.
 
-## Package Variables (SMTP / Email)
+## Package Variables (Email)
 
-These are `User` namespace variables stored in the `.dtsx` and used by the Final Confirmation Email Script Task. Update them directly in the DTSX if SMTP credentials or recipients change.
+These are `User` namespace variables stored in the `.dtsx` and used by the Final Confirmation Email Script Task.
 
 | Variable | Current value |
 |---|---|
-| `SMTPServer` | `email-smtp.us-east-1.amazonaws.com` |
-| `SMTPPort` | `587` |
-| `SMTPUsername` | `AKIATN243CRFNIAN7LHU` (AWS SES IAM key) |
-| `SMTPPassword` | Encoded value in DTSX (update if SES credentials rotate) |
+| `ImportsPath` | `I:\Git Solutions\BCMSDataCycle_SSIS_MoveQAToProd_Upgrade\Imports` — path to the `Imports\` folder containing the AWS SDK DLLs, read in `Main()` via the `_importsDir` static field before the AWS Secrets Manager call |
 | `EmailFrom` | `DatabaseEmail@arc-network.com` |
 | `EmailTo` | `admin@alm.com` |
 | `EmailCC` | `Eric.ryles@arc-network.com`, `Ron.Lubke@arc-network.com`, `HarShah@synoptek.com`, `HVaghasiya@synoptek.com`, `MBhavsar@synoptek.com`, `bhushah@synoptek.com` |
+
+`SMTPServer`, `SMTPPort`, `SMTPUsername`, and `SMTPPassword` package variables were **removed**. `SmtpServer`/`SmtpPort` moved to project parameters (see "Project Parameters" below); `SMTPUsername`/`SMTPPassword` (a plaintext AWS SES IAM key/password checked into git) were replaced entirely by an AWS Secrets Manager lookup — see "AWS Secrets Manager Credential Retrieval" below.
+
+## Project Parameters
+
+Project-level parameters are distinct from package variables — they are set once in `Project.params` (or overridden per SSIS Catalog environment) instead of being duplicated as package variables.
+
+| Parameter | Default Value | Purpose |
+|---|---|---|
+| `SmtpServer` | `email-smtp.us-east-1.amazonaws.com` | AWS SES SMTP server, used by the Final Confirmation Email Script Task |
+| `SmtpPort` | `587` (Int32) | AWS SES SMTP port |
+| `AwsSecretName` | `JudyDiamond-SMTP` | Name of the AWS Secrets Manager secret holding the SMTP `UserName`/`Password` JSON — see "AWS Secrets Manager Credential Retrieval" |
+| `AwsRegion` | `us-east-1` | AWS region of the `AwsSecretName` secret in Secrets Manager |
+
+## AWS Secrets Manager Credential Retrieval
+
+SMTP credentials are not stored anywhere in the project. The Final Confirmation Email Script Task fetches them at runtime from AWS Secrets Manager, named by `$Project::AwsSecretName` (default `JudyDiamond-SMTP`) in region `$Project::AwsRegion` (default `us-east-1`). The secret value is JSON: `{"Host":"...","Port":587,"UserName":"...","Password":"...","EnableSsl":true}` — only `UserName`/`Password` are used; `Host`/`Port`/`EnableSsl` are ignored (the project keeps `$Project::SmtpServer`/`$Project::SmtpPort` as-is).
+
+The Script Task embeds two private static helpers:
+
+```csharp
+private static string GetSecretString(string secretName, string region)
+{
+    using (var client = new Amazon.SecretsManager.AmazonSecretsManagerClient(Amazon.RegionEndpoint.GetBySystemName(region)))
+    {
+        var response = client.GetSecretValue(new Amazon.SecretsManager.Model.GetSecretValueRequest { SecretId = secretName });
+        return response.SecretString;
+    }
+}
+
+private static string ExtractJsonStringField(string json, string fieldName)
+{
+    var match = System.Text.RegularExpressions.Regex.Match(json, "\"" + fieldName + "\"\\s*:\\s*\"((?:[^\"\\\\]|\\\\.)*)\"");
+    if (!match.Success)
+        throw new System.Exception("Field '" + fieldName + "' not found in secret.");
+    return match.Groups[1].Value.Replace("\\\"", "\"").Replace("\\\\", "\\");
+}
+```
+
+`ExtractJsonStringField` is a hand-rolled regex extractor, not a JSON library — avoids adding a JSON parser dependency for a single task.
+
+**AWS credentials for calling Secrets Manager**: `AmazonSecretsManagerClient(RegionEndpoint)` uses the AWS SDK's default credential provider chain (environment variables, `~/.aws/credentials`, or — the expected case here — an IAM role/instance profile attached to the machine running the SSIS Catalog). No access key/secret is stored anywhere in the project; the server must have `secretsmanager:GetSecretValue` permission on the `JudyDiamond-SMTP` secret via its IAM role.
+
+**Assembly loading**: `AWSSDK.Core.dll`/`AWSSDK.SecretsManager.dll` (3.7.500, net45 — self-contained, no further dependencies) live in `Imports\` and are loaded via an `AssemblyResolve` handler registered in `static ScriptMain()`, keyed off a `_importsDir` static field populated from `User::ImportsPath` at the top of `Main()` (before `sendMail()`/the AWS calls run) — the resolver probes `_importsDir`, then `%ProgramFiles%\Microsoft SQL Server\160\DTS\Tasks`, then the NuGet cache (`%NUGET_PACKAGES%` or `%USERPROFILE%\.nuget\packages\awssdk.core\3.7.500\lib\net45\...`) as a dev-machine fallback. The embedded `.csproj` references both DLLs via `HintPath` into `Imports\`.
+
+**On a deployment server**, update the `User::ImportsPath` package variable to the path where the DLLs are placed on that server (or copy them to `C:\Program Files\Microsoft SQL Server\160\DTS\Tasks\`, which requires admin).
 
 ## Protection Level & Consistency Check
 
