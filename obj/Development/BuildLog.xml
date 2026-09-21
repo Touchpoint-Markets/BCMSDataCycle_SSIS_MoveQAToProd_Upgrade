@@ -4,16 +4,16 @@
     <Name>BCMSDataCycle</Name>
     <LastWriteTime>2026-09-10T17:26:26.8427146Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithPassword</LastKnownProtectionLevel>
-    <Salt>Shp41wRz</Salt>
-    <LastKnownProtectedHashedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAYDO1NpQJ40OaOhCTZzB6BAAAAAACAAAAAAAQZgAAAAEAACAAAACqhT4EVAQ/2ROZlm+x1BAVX3VF3oKP7zNMnd4/ycuB0QAAAAAOgAAAAAIAACAAAADmfNyo6pdYjIB+5+mdYv70PWw0rYhTkeOekNQhmqfSSjAAAAB96AJSoJqgdYvMLBtGK9zyxyrzkjfHfBmodm+VrTwOGnMa/rGNR7Mc9PbPwxp5yxFAAAAAEj3Zzw8S2MeGpKFJfDAr8CAnxvbb5cELg9aoEassU6QafIuB04e67wQ37HUj26kluteTaZ7rfuEuW0jX+YYeeQ==</LastKnownProtectedHashedPassword>
+    <Salt>nPgNrGj4</Salt>
+    <LastKnownProtectedHashedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAYDO1NpQJ40OaOhCTZzB6BAAAAAACAAAAAAAQZgAAAAEAACAAAAAQAld8/q6/0YDi8kmN7m4OOAaY/2QKx2ydlQOSdUzCPwAAAAAOgAAAAAIAACAAAAD5KgzL48SxEFx9MU9bMjvbVqI6u5Byc14pvHA/f/4sPTAAAADZ7GkdnRF/Oab1w7S1RtczY1yW7yG0t7bqquRmjCB+vUwNW9Vd2nS9DIjZegLYQA5AAAAAsoNIFRbaemcYJ73tovuIQEhwGOhuF4GGuDkak14Goln0U6QDBgb6RLQf1VB6Bysc9m290GiOAAjQhDmDCm5mCw==</LastKnownProtectedHashedPassword>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>BCMSGoldQAToProd.dtsx</Name>
-      <LastWriteTime>2026-09-21T07:37:43.5065319Z</LastWriteTime>
+      <LastWriteTime>2026-09-21T07:43:51.7384933Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithPassword</LastKnownProtectionLevel>
-      <Salt>MxrJz9Xe</Salt>
-      <LastKnownProtectedHashedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAYDO1NpQJ40OaOhCTZzB6BAAAAAACAAAAAAAQZgAAAAEAACAAAACVyBTYwS4ScymGam9QxipaSRWX8qE2B9pUOeCLn7uJWwAAAAAOgAAAAAIAACAAAAAmjVvWZOvR1PBWD0a2JFtQ4bUOYaJLgN0lhoNjTRQEkzAAAACcrsPkQ+LmJ1tX/S0TwKClYb+eB91BazpnsMs02v6SgebzHzdyqRWq/o6CnxsVSopAAAAA1Co5X1wCg9jgdwroWkNVdvEkIW5nlWHOs6H1sC6cV7//NhqfP5770lH/stLI/ke4rSZ7o0mCcKV7/Y7HzDr6wg==</LastKnownProtectedHashedPassword>
+      <Salt>mU7BYznJ</Salt>
+      <LastKnownProtectedHashedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAYDO1NpQJ40OaOhCTZzB6BAAAAAACAAAAAAAQZgAAAAEAACAAAACyow4GuW9v0PCZBj+/moumeL/ag4eojo5bRbQaT7NZjAAAAAAOgAAAAAIAACAAAAAb5OH+FEtAi4TfO0khpIp6BpICNgidjWEEJ2jN9Sw1ZjAAAACGwk3dOFp9bTf0ZSUtjBwRvUTdV7Z6oerzbGMcYk5fzebOD9qv2pAihlcOgiYQgXZAAAAAEk8XT5T0grzCLp55aOyAmK/wFPj07cQ6/NLC72977/5o9YDYMfRxn5Uk4uh2s8q/0OiLdrwyz2plXj9+byGA1w==</LastKnownProtectedHashedPassword>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
 </BuildLog>
